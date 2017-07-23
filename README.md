@@ -19,7 +19,11 @@ Failing:
 
 ## Install
 
-You will need Xcode and Adium.
+A built version is included in the repository. You can simply run `make install` to install it into your Adium directory.
+
+### Building
+
+You will need Xcode.
 
 All dependencies are bundled for convenience.
 
