@@ -1,0 +1,3 @@
+[submodule "purple-matrix"]
+	path = purple-matrix
+	url = https://github.com/matrix-org/purple-matrix

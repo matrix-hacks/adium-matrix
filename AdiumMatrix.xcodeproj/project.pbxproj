@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A0D546B1F244BDE009439FA /* libmatrix.c in Sources */ = {isa = PBXBuildFile; fileRef = 7A0D54601F244BDE009439FA /* libmatrix.c */; };
+		7A0D546C1F244BDE009439FA /* matrix-api.c in Sources */ = {isa = PBXBuildFile; fileRef = 7A0D54611F244BDE009439FA /* matrix-api.c */; };
+		7A0D546D1F244BDE009439FA /* matrix-connection.c in Sources */ = {isa = PBXBuildFile; fileRef = 7A0D54621F244BDE009439FA /* matrix-connection.c */; };
+		7A0D546E1F244BDE009439FA /* matrix-event.c in Sources */ = {isa = PBXBuildFile; fileRef = 7A0D54631F244BDE009439FA /* matrix-event.c */; };
+		7A0D546F1F244BDE009439FA /* matrix-json.c in Sources */ = {isa = PBXBuildFile; fileRef = 7A0D54641F244BDE009439FA /* matrix-json.c */; };
+		7A0D54701F244BDE009439FA /* matrix-room.c in Sources */ = {isa = PBXBuildFile; fileRef = 7A0D54651F244BDE009439FA /* matrix-room.c */; };
+		7A0D54711F244BDE009439FA /* matrix-roommembers.c in Sources */ = {isa = PBXBuildFile; fileRef = 7A0D54661F244BDE009439FA /* matrix-roommembers.c */; };
+		7A0D54721F244BDE009439FA /* matrix-statetable.c in Sources */ = {isa = PBXBuildFile; fileRef = 7A0D54671F244BDE009439FA /* matrix-statetable.c */; };
+		7A0D54731F244BDE009439FA /* matrix-sync.c in Sources */ = {isa = PBXBuildFile; fileRef = 7A0D54681F244BDE009439FA /* matrix-sync.c */; };
+		7A0D54741F244BDE009439FA /* matrix-16px.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A0D54691F244BDE009439FA /* matrix-16px.png */; };
+		7A0D54751F244BDE009439FA /* matrix-48px.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A0D546A1F244BDE009439FA /* matrix-48px.png */; };
+		7A0D54781F244C78009439FA /* libglib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0D54771F244C78009439FA /* libglib.framework */; };
+		7A0D547F1F244C88009439FA /* libgobject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0D547A1F244C88009439FA /* libgobject.framework */; };
+		7A0D54801F244C88009439FA /* libintl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0D547B1F244C88009439FA /* libintl.framework */; };
+		7A0D54811F244C88009439FA /* libjson-glib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0D547C1F244C88009439FA /* libjson-glib.framework */; };
+		7A0D54821F244C88009439FA /* libpurple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0D547D1F244C88009439FA /* libpurple.framework */; };
+		7A0D54871F245783009439FA /* Adium.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0D54841F245783009439FA /* Adium.framework */; };
+		7A0D54881F245783009439FA /* AdiumLibpurple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0D54851F245783009439FA /* AdiumLibpurple.framework */; };
+		7A0D54891F245783009439FA /* AIUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0D54861F245783009439FA /* AIUtilities.framework */; };
+		7A0D548B1F245980009439FA /* libhttp_parser.2.7.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A0D548A1F245980009439FA /* libhttp_parser.2.7.1.dylib */; };
+		7A755E261F22BE9B00E8D364 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A755E251F22BE9B00E8D364 /* Cocoa.framework */; };
+		7AB7E1211F23D77E00E726E4 /* SteamOptions.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AB7E11E1F23D77E00E726E4 /* SteamOptions.xib */; };
+		7AB7E1221F23D77E00E726E4 /* SteamSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AB7E1201F23D77E00E726E4 /* SteamSettingsViewController.m */; };
+		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		92F887B80F53AE4F0039CBA9 /* MXMatrixAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F887B30F53AE4F0039CBA9 /* MXMatrixAccount.m */; };
+		92F887B90F53AE4F0039CBA9 /* MXMatrixLibPurpleServicePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F887B50F53AE4F0039CBA9 /* MXMatrixLibPurpleServicePlugin.m */; };
+		92F887BA0F53AE4F0039CBA9 /* MXMatrixService.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F887B70F53AE4F0039CBA9 /* MXMatrixService.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		921CAEF10F56FD5200BEFF77 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		924CE3D10F60132800AD9F9E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		32DBCF630370AF2F00C91783 /* AdiumMatrix_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdiumMatrix_Prefix.pch; sourceTree = "<group>"; };
+		7A0D54571F244BDE009439FA /* libmatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libmatrix.h; path = "purple-matrix/libmatrix.h"; sourceTree = "<group>"; };
+		7A0D54581F244BDE009439FA /* matrix-api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "matrix-api.h"; path = "purple-matrix/matrix-api.h"; sourceTree = "<group>"; };
+		7A0D54591F244BDE009439FA /* matrix-connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "matrix-connection.h"; path = "purple-matrix/matrix-connection.h"; sourceTree = "<group>"; };
+		7A0D545A1F244BDE009439FA /* matrix-event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "matrix-event.h"; path = "purple-matrix/matrix-event.h"; sourceTree = "<group>"; };
+		7A0D545B1F244BDE009439FA /* matrix-json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "matrix-json.h"; path = "purple-matrix/matrix-json.h"; sourceTree = "<group>"; };
+		7A0D545C1F244BDE009439FA /* matrix-room.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "matrix-room.h"; path = "purple-matrix/matrix-room.h"; sourceTree = "<group>"; };
+		7A0D545D1F244BDE009439FA /* matrix-roommembers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "matrix-roommembers.h"; path = "purple-matrix/matrix-roommembers.h"; sourceTree = "<group>"; };
+		7A0D545E1F244BDE009439FA /* matrix-statetable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "matrix-statetable.h"; path = "purple-matrix/matrix-statetable.h"; sourceTree = "<group>"; };
+		7A0D545F1F244BDE009439FA /* matrix-sync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "matrix-sync.h"; path = "purple-matrix/matrix-sync.h"; sourceTree = "<group>"; };
+		7A0D54601F244BDE009439FA /* libmatrix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = libmatrix.c; path = "purple-matrix/libmatrix.c"; sourceTree = "<group>"; };
+		7A0D54611F244BDE009439FA /* matrix-api.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "matrix-api.c"; path = "purple-matrix/matrix-api.c"; sourceTree = "<group>"; };
+		7A0D54621F244BDE009439FA /* matrix-connection.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "matrix-connection.c"; path = "purple-matrix/matrix-connection.c"; sourceTree = "<group>"; };
+		7A0D54631F244BDE009439FA /* matrix-event.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "matrix-event.c"; path = "purple-matrix/matrix-event.c"; sourceTree = "<group>"; };
+		7A0D54641F244BDE009439FA /* matrix-json.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "matrix-json.c"; path = "purple-matrix/matrix-json.c"; sourceTree = "<group>"; };
+		7A0D54651F244BDE009439FA /* matrix-room.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "matrix-room.c"; path = "purple-matrix/matrix-room.c"; sourceTree = "<group>"; };
+		7A0D54661F244BDE009439FA /* matrix-roommembers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "matrix-roommembers.c"; path = "purple-matrix/matrix-roommembers.c"; sourceTree = "<group>"; };
+		7A0D54671F244BDE009439FA /* matrix-statetable.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "matrix-statetable.c"; path = "purple-matrix/matrix-statetable.c"; sourceTree = "<group>"; };
+		7A0D54681F244BDE009439FA /* matrix-sync.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "matrix-sync.c"; path = "purple-matrix/matrix-sync.c"; sourceTree = "<group>"; };
+		7A0D54691F244BDE009439FA /* matrix-16px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "matrix-16px.png"; path = "purple-matrix/matrix-16px.png"; sourceTree = "<group>"; };
+		7A0D546A1F244BDE009439FA /* matrix-48px.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "matrix-48px.png"; path = "purple-matrix/matrix-48px.png"; sourceTree = "<group>"; };
+		7A0D54771F244C78009439FA /* libglib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libglib.framework; path = Frameworks/libglib.framework; sourceTree = "<group>"; };
+		7A0D54791F244C88009439FA /* libglib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libglib.framework; path = Frameworks/libglib.framework; sourceTree = "<group>"; };
+		7A0D547A1F244C88009439FA /* libgobject.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libgobject.framework; path = Frameworks/libgobject.framework; sourceTree = "<group>"; };
+		7A0D547B1F244C88009439FA /* libintl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libintl.framework; path = Frameworks/libintl.framework; sourceTree = "<group>"; };
+		7A0D547C1F244C88009439FA /* libjson-glib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "libjson-glib.framework"; path = "Frameworks/libjson-glib.framework"; sourceTree = "<group>"; };
+		7A0D547D1F244C88009439FA /* libpurple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = libpurple.framework; path = Frameworks/libpurple.framework; sourceTree = "<group>"; };
+		7A0D54841F245783009439FA /* Adium.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Adium.framework; path = Frameworks/Adium.framework; sourceTree = "<group>"; };
+		7A0D54851F245783009439FA /* AdiumLibpurple.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdiumLibpurple.framework; path = Frameworks/AdiumLibpurple.framework; sourceTree = "<group>"; };
+		7A0D54861F245783009439FA /* AIUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AIUtilities.framework; path = Frameworks/AIUtilities.framework; sourceTree = "<group>"; };
+		7A0D548A1F245980009439FA /* libhttp_parser.2.7.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libhttp_parser.2.7.1.dylib; path = Frameworks/libhttp_parser.2.7.1.dylib; sourceTree = "<group>"; };
+		7A755E251F22BE9B00E8D364 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		7AB7E11E1F23D77E00E726E4 /* SteamOptions.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SteamOptions.xib; sourceTree = "<group>"; };
+		7AB7E11F1F23D77E00E726E4 /* SteamSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SteamSettingsViewController.h; sourceTree = "<group>"; };
+		7AB7E1201F23D77E00E726E4 /* SteamSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SteamSettingsViewController.m; sourceTree = "<group>"; };
+		8D5B49B6048680CD000E48DA /* AdiumMatrix.AdiumLibpurplePlugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdiumMatrix.AdiumLibpurplePlugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92F887B20F53AE4F0039CBA9 /* MXMatrixAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXMatrixAccount.h; sourceTree = "<group>"; };
+		92F887B30F53AE4F0039CBA9 /* MXMatrixAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXMatrixAccount.m; sourceTree = "<group>"; };
+		92F887B40F53AE4F0039CBA9 /* MXMatrixLibPurpleServicePlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXMatrixLibPurpleServicePlugin.h; sourceTree = "<group>"; };
+		92F887B50F53AE4F0039CBA9 /* MXMatrixLibPurpleServicePlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXMatrixLibPurpleServicePlugin.m; sourceTree = "<group>"; };
+		92F887B60F53AE4F0039CBA9 /* MXMatrixService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MXMatrixService.h; sourceTree = "<group>"; };
+		92F887B70F53AE4F0039CBA9 /* MXMatrixService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MXMatrixService.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A0D548B1F245980009439FA /* libhttp_parser.2.7.1.dylib in Frameworks */,
+				7A0D54781F244C78009439FA /* libglib.framework in Frameworks */,
+				7A755E261F22BE9B00E8D364 /* Cocoa.framework in Frameworks */,
+				7A0D54801F244C88009439FA /* libintl.framework in Frameworks */,
+				7A0D54871F245783009439FA /* Adium.framework in Frameworks */,
+				7A0D547F1F244C88009439FA /* libgobject.framework in Frameworks */,
+				7A0D54891F245783009439FA /* AIUtilities.framework in Frameworks */,
+				7A0D54781F244C78009439FA /* libglib.framework in Frameworks */,
+				7A0D54881F245783009439FA /* AdiumLibpurple.framework in Frameworks */,
+				7A0D54821F244C88009439FA /* libpurple.framework in Frameworks */,
+				7A0D54811F244C88009439FA /* libjson-glib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* AdiumMatrix */ = {
+			isa = PBXGroup;
+			children = (
+				7A0D54761F244BE4009439FA /* purple-matrix */,
+				7A755E2D1F23B6E100E8D364 /* adium-matrix */,
+				32C88E010371C26100C91783 /* Other Sources */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+				7A755E1E1F22BE8300E8D364 /* Frameworks */,
+			);
+			name = AdiumMatrix;
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7A0D54691F244BDE009439FA /* matrix-16px.png */,
+				7A0D546A1F244BDE009439FA /* matrix-48px.png */,
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B6048680CD000E48DA /* AdiumMatrix.AdiumLibpurplePlugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32C88E010371C26100C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF630370AF2F00C91783 /* AdiumMatrix_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		7A0D54761F244BE4009439FA /* purple-matrix */ = {
+			isa = PBXGroup;
+			children = (
+				7A0D54571F244BDE009439FA /* libmatrix.h */,
+				7A0D54581F244BDE009439FA /* matrix-api.h */,
+				7A0D54591F244BDE009439FA /* matrix-connection.h */,
+				7A0D545A1F244BDE009439FA /* matrix-event.h */,
+				7A0D545B1F244BDE009439FA /* matrix-json.h */,
+				7A0D545C1F244BDE009439FA /* matrix-room.h */,
+				7A0D545D1F244BDE009439FA /* matrix-roommembers.h */,
+				7A0D545E1F244BDE009439FA /* matrix-statetable.h */,
+				7A0D545F1F244BDE009439FA /* matrix-sync.h */,
+				7A0D54601F244BDE009439FA /* libmatrix.c */,
+				7A0D54611F244BDE009439FA /* matrix-api.c */,
+				7A0D54621F244BDE009439FA /* matrix-connection.c */,
+				7A0D54631F244BDE009439FA /* matrix-event.c */,
+				7A0D54641F244BDE009439FA /* matrix-json.c */,
+				7A0D54651F244BDE009439FA /* matrix-room.c */,
+				7A0D54661F244BDE009439FA /* matrix-roommembers.c */,
+				7A0D54671F244BDE009439FA /* matrix-statetable.c */,
+				7A0D54681F244BDE009439FA /* matrix-sync.c */,
+			);
+			name = "purple-matrix";
+			sourceTree = "<group>";
+		};
+		7A755E1E1F22BE8300E8D364 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A0D548A1F245980009439FA /* libhttp_parser.2.7.1.dylib */,
+				7A0D54841F245783009439FA /* Adium.framework */,
+				7A0D54851F245783009439FA /* AdiumLibpurple.framework */,
+				7A0D54861F245783009439FA /* AIUtilities.framework */,
+				7A0D54791F244C88009439FA /* libglib.framework */,
+				7A0D547A1F244C88009439FA /* libgobject.framework */,
+				7A0D547B1F244C88009439FA /* libintl.framework */,
+				7A0D547C1F244C88009439FA /* libjson-glib.framework */,
+				7A0D547D1F244C88009439FA /* libpurple.framework */,
+				7A0D54771F244C78009439FA /* libglib.framework */,
+				7A755E251F22BE9B00E8D364 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A755E2D1F23B6E100E8D364 /* adium-matrix */ = {
+			isa = PBXGroup;
+			children = (
+				92F887B20F53AE4F0039CBA9 /* MXMatrixAccount.h */,
+				92F887B30F53AE4F0039CBA9 /* MXMatrixAccount.m */,
+				92F887B40F53AE4F0039CBA9 /* MXMatrixLibPurpleServicePlugin.h */,
+				92F887B50F53AE4F0039CBA9 /* MXMatrixLibPurpleServicePlugin.m */,
+				92F887B60F53AE4F0039CBA9 /* MXMatrixService.h */,
+				92F887B70F53AE4F0039CBA9 /* MXMatrixService.m */,
+				7AB7E11E1F23D77E00E726E4 /* SteamOptions.xib */,
+				7AB7E11F1F23D77E00E726E4 /* SteamSettingsViewController.h */,
+				7AB7E1201F23D77E00E726E4 /* SteamSettingsViewController.m */,
+			);
+			name = "adium-matrix";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D5B49AC048680CD000E48DA /* AdiumMatrix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "AdiumMatrix" */;
+			buildPhases = (
+				8D5B49AF048680CD000E48DA /* Resources */,
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+				921CAEF10F56FD5200BEFF77 /* CopyFiles */,
+				924CE3D10F60132800AD9F9E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdiumMatrix;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = AdiumMatrix;
+			productReference = 8D5B49B6048680CD000E48DA /* AdiumMatrix.AdiumLibpurplePlugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+			};
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "AdiumMatrix" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* AdiumMatrix */;
+			projectDirPath = "";
+			projectRoot = ..;
+			targets = (
+				8D5B49AC048680CD000E48DA /* AdiumMatrix */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */,
+				7A0D54741F244BDE009439FA /* matrix-16px.png in Resources */,
+				7A0D54751F244BDE009439FA /* matrix-48px.png in Resources */,
+				7AB7E1211F23D77E00E726E4 /* SteamOptions.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F887B90F53AE4F0039CBA9 /* MXMatrixLibPurpleServicePlugin.m in Sources */,
+				7A0D54731F244BDE009439FA /* matrix-sync.c in Sources */,
+				7AB7E1221F23D77E00E726E4 /* SteamSettingsViewController.m in Sources */,
+				7A0D546D1F244BDE009439FA /* matrix-connection.c in Sources */,
+				7A0D54721F244BDE009439FA /* matrix-statetable.c in Sources */,
+				7A0D546E1F244BDE009439FA /* matrix-event.c in Sources */,
+				7A0D546F1F244BDE009439FA /* matrix-json.c in Sources */,
+				7A0D546B1F244BDE009439FA /* libmatrix.c in Sources */,
+				7A0D54711F244BDE009439FA /* matrix-roommembers.c in Sources */,
+				92F887BA0F53AE4F0039CBA9 /* MXMatrixService.m in Sources */,
+				92F887B80F53AE4F0039CBA9 /* MXMatrixAccount.m in Sources */,
+				7A0D546C1F244BDE009439FA /* matrix-api.c in Sources */,
+				7A0D54701F244BDE009439FA /* matrix-room.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB913B08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_ON_DEMAND_RESOURCES = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AdiumMatrix_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Frameworks/include",
+					"$(PROJECT_DIR)/Frameworks/libglib.framework/Headers",
+					"$(PROJECT_DIR)/Frameworks/libjson-glib.framework/Headers",
+					"$(PROJECT_DIR)/Frameworks/libpurple.framework/Headers",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Application Support/Adium 2.0/PlugIns/";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks";
+				OTHER_CFLAGS = (
+					"-DMBPURPLE_VERSION=\\\"0.2.1\\\"",
+					"-DPURPLE_STATIC_PRPL",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cheekybadger.${PRODUCT_NAME:identifier}";
+				PRODUCT_NAME = AdiumMatrix;
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = "x86_64 i386";
+				WRAPPER_EXTENSION = AdiumLibpurplePlugin;
+			};
+			name = Debug;
+		};
+		1DEB913C08733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_ON_DEMAND_RESOURCES = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks";
+				GCC_MODEL_TUNING = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AdiumMatrix_Prefix.pch;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Frameworks/include",
+					"$(PROJECT_DIR)/Frameworks/libglib.framework/Headers",
+					"$(PROJECT_DIR)/Frameworks/libjson-glib.framework/Headers",
+					"$(PROJECT_DIR)/Frameworks/libpurple.framework/Headers",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Application Support/Adium 2.0/PlugIns/";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/Frameworks";
+				OTHER_CFLAGS = (
+					"-DMBPURPLE_VERSION=\\\"0.2.1\\\"",
+					"-DPURPLE_STATIC_PRPL",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cheekybadger.${PRODUCT_NAME:identifier}";
+				PRODUCT_NAME = AdiumMatrix;
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = "x86_64 i386";
+				WRAPPER_EXTENSION = AdiumLibpurplePlugin;
+			};
+			name = Release;
+		};
+		1DEB913F08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ADIUM_FRAMEWORKS_PATH = "/Users/keyvan/Library/Developer/Xcode/DerivedData/Adium-ddovwiajjgxavcegcxwyjjdghosb/Build/Products/Debug/Adium.app/Contents/Frameworks";
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Debug;
+		};
+		1DEB914008733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ADIUM_FRAMEWORKS_PATH = "/Users/keyvan/Library/Developer/Xcode/DerivedData/Adium-ddovwiajjgxavcegcxwyjjdghosb/Build/Products/Debug/Adium.app/Contents/Frameworks";
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+				VALID_ARCHS = "i386 x86_64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "AdiumMatrix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913B08733D840010E9CD /* Debug */,
+				1DEB913C08733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "AdiumMatrix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913F08733D840010E9CD /* Debug */,
+				1DEB914008733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
