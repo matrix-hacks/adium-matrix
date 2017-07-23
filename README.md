@@ -17,11 +17,30 @@ Failing:
 * Does not pull people's avatars (they all show up as the matrix logo)
 * Appears that the display name is being used a unique ID in a bad way. E.g. two people with the same nick collide. If you have the same name as another, and one of you changes nick, both appear to change. Search `get_real_name_for_account_conv_buddy` in the adium codebase to debug this. Might want to hash the full (localpart + domain) for the UID.
 
+## Install
+
+You will need Xcode and Adium.
+
+All dependencies are bundled for convenience.
+
+```
+make
+make install
+```
+
+The `make` task gets [purple-matrix](https://github.com/matrix-org/purple-matrix) and compiles it into an adium wrapper using Xcode.
+
+The `make install` task installs it into the Adium plugins directory.
+
 ## Development Resources
 
-Searching for the wrapper classes on github: https://github.com/search?p=2&q=CBPurpleAccount&type=Code&utf8=%E2%9C%93
+If you want to help improve it you'll probably need to get Adium. You can find the [source code on bitbucket](https://bitbucket.org/adium/adium) and clone it using mercurial (`hg`). **Make sure you are using the [adium-1.5.10.4](https://bitbucket.org/adium/adium/branch/adium-1.5.10.4) branch**
 
-Good examples (libpidgin service plugins with adium wrappers)
+The documentation on Adium plugins is basically missing these days, but there are loads of examples of Adium ports (mainly by tripplet on Github).
+
+A helpful tip is to [search for one of the wrapper classes on github](https://github.com/search?p=2&q=CBPurpleAccount&type=Code&utf8=%E2%9C%93)
+
+Some good examples:
 
 https://github.com/majn/telegram-purple
 
